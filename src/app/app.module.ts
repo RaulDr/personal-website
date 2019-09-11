@@ -7,13 +7,17 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MainComponent} from './main/main.component';
 import {NavbarComponent} from './global/navbar/navbar.component';
 import { FooterComponent } from './global/footer/footer.component';
+import { HeroComponent } from './main/hero/hero.component';
+import { PortofolioComponent } from './main/portofolio/portofolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HeroComponent,
+    PortofolioComponent
   ],
   imports: [
     BrowserModule,

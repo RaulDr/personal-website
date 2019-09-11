@@ -1,0 +1,44 @@
+.masthead {
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+
+.bg-primary {
+  background-color: #1abc9c !important;
+}
+
+.masthead-heading {
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .divider-custom-line {
+    background-color: #fff;
+    width: 100%;
+    max-width: 7rem;
+    height: .25rem;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+  }
+}
+
+.masthead .masthead-subheading {
+  font-size: 1.5rem;
+}
+
+custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
