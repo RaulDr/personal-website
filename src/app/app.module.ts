@@ -10,6 +10,7 @@ import { FooterComponent } from './global/footer/footer.component';
 import { HeroComponent } from './main/hero/hero.component';
 import { PortofolioComponent } from './main/portofolio/portofolio.component';
 import { AboutComponent } from './main/about/about.component';
+import { DividerCustomComponent } from './global/divider-custom/divider-custom.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AboutComponent } from './main/about/about.component';
     FooterComponent,
     HeroComponent,
     PortofolioComponent,
-    AboutComponent
+    AboutComponent,
+    DividerCustomComponent
   ],
   imports: [
     BrowserModule,
