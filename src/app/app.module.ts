@@ -11,6 +11,7 @@ import { HeroComponent } from './main/hero/hero.component';
 import { PortofolioComponent } from './main/portofolio/portofolio.component';
 import { AboutComponent } from './main/about/about.component';
 import { DividerCustomComponent } from './global/divider-custom/divider-custom.component';
+import { ContactMeComponent } from './main/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DividerCustomComponent } from './global/divider-custom/divider-custom.c
     HeroComponent,
     PortofolioComponent,
     AboutComponent,
-    DividerCustomComponent
+    DividerCustomComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
