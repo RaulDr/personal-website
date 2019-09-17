@@ -12,6 +12,7 @@ import { PortofolioComponent } from './main/portofolio/portofolio.component';
 import { AboutComponent } from './main/about/about.component';
 import { DividerCustomComponent } from './global/divider-custom/divider-custom.component';
 import { ContactMeComponent } from './main/contact-me/contact-me.component';
+import {ProjectsComponent} from './main/portofolio/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactMeComponent } from './main/contact-me/contact-me.component';
     PortofolioComponent,
     AboutComponent,
     DividerCustomComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
