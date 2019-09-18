@@ -17,12 +17,13 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
 
-        <form #heroForm="ngForm">
+        <form [formGroup]="emailForm">
           <div class="control-group">
             <div class="form-group floating-label-form-group controls mb-0 pb-2">
               <label>Subject</label>
               <input class="form-control" id="subject" type="text" placeholder="Subject" required="required"
-                     data-validation-required-message="Please enter a subject." [(ngModel)]="subject" name="subject">
+                     data-validation-required-message="Please enter a subject." formControlName="subject"
+                     name="subject">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -30,7 +31,8 @@
             <div class="form-group floating-label-form-group controls mb-0 pb-2">
               <label>Email Address</label>
               <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
-                     data-validation-required-message="Please enter your email address." [(ngModel)]="email" name="email">
+                     data-validation-required-message="Please enter your email address." formControlName="email"
+                     name="email">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -38,14 +40,20 @@
             <div class="form-group floating-label-form-group controls mb-0 pb-2">
               <label>Message</label>
               <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"
-                        data-validation-required-message="Please enter a message." [(ngModel)]="message" name="message"></textarea>
+                        data-validation-required-message="Please enter a message." formControlName="message"
+                        name="message"></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <br>
-          <div id="success"></div>
+          <div class="alert alert-danger" *ngIf="isFormInvalid" role="alert">
+            This is a danger alert—check it out!
+          </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton" (click)="onSubmit()">Send</button>
+            <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton" (click)="onSubmit()">
+              SEND
+              <div *ngIf="isLoading" class="d-inline-block loader"></div>
+            </button>
           </div>
         </form>
 
