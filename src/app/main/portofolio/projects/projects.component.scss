@@ -19,6 +19,16 @@
       height: 40px;
       border-radius: 50%;
       object-fit: cover;
+      transition: 0.2s;
+    }
+
+    a {
+      .card__img--position {
+        &:hover {
+          transition: 0.2s;
+          border: 2px solid gray;
+        }
+      }
     }
   }
 }
