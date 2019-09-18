@@ -26,7 +26,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
 
     const mailOptions = {
       from: emailDto.from,
-      to: 'dragoiuraul2009@@gmail.com',
+      to: 'dragoiuraul2009@gmail.com',
       subject: emailDto.subject,
       html: `<p style="font-size: 16px;">Message</p>
             <p>${ emailDto.message }</p>`
