@@ -3,7 +3,7 @@ import EmailDto from './email.dto';
 import {HttpClient} from '@angular/common/http';
 import {take} from 'rxjs/operators';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export default class EmailService {
 
   constructor(private readonly http: HttpClient) {

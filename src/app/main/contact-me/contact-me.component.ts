@@ -7,7 +7,6 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss'],
-  providers: [EmailService]
 })
 export class ContactMeComponent implements OnInit {
   public submitted = false;
