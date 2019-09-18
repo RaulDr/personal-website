@@ -5,24 +5,24 @@
       <!-- Footer Location -->
       <div class="col-lg-4 mb-5 mb-lg-0">
         <h4 class="text-uppercase mb-4">Location</h4>
-        <p class="lead mb-0">2215 John Daniel Drive
-          <br>Clark, MO 65243</p>
+        <p class="lead mb-0"> Austria,
+          <br>Vienna</p>
       </div>
 
       <!-- Footer Social Icons -->
       <div class="col-lg-4 mb-5 mb-lg-0">
         <h4 class="text-uppercase mb-4">Around the Web</h4>
-        <a class="" href="https://www.facebook.com/RaulDrrr">
-          <img class=" btn-social mx-1" src="/assets/footer-icons/facebook-logo-button.svg" height="50px" width="50px">
+        <a class="" href="https://www.facebook.com/RaulDrrr" target="_blank">
+          <img class=" btn-social mx-1" [src]="facebookImgSrc" (mouseover)="onMouseOver('facebook')" (mouseout)="onMouseOut('facebook')" height="50px" width="50px">
         </a>
-        <a class="btn btn-outline-light btn-social mx-1" href="#">
-          <i class="fab fa-fw fa-twitter"></i>
+        <a class="" href="https://www.instagram.com/rauldragoiu/?hl=en" (mouseover)="onMouseOver('instagram')" (mouseout)="onMouseOut('instagram')" target="_blank">
+          <img class=" btn-social mx-1" [src]="instagramImgSrc" height="50px" width="50px">
         </a>
-        <a class="btn btn-outline-light btn-social mx-1" href="#">
-          <i class="fab fa-fw fa-linkedin-in"></i>
+        <a class="" href="https://www.linkedin.com/in/raul-dragoiu-7a3936138/" (mouseover)="onMouseOver('linkedin')" (mouseout)="onMouseOut('linkedin')" target="_blank">
+          <img class=" btn-social mx-1" [src]="linkedinImgSrc" height="50px" width="50px">
         </a>
-        <a class="btn btn-outline-light btn-social mx-1" href="#">
-          <i class="fab fa-fw fa-dribbble"></i>
+        <a href="https://github.com/RaulDr" (mouseover)="onMouseOver('github')" (mouseout)="onMouseOut('github')" target="_blank">
+          <img class=" btn-social mx-1" [src]="githubImgSrc" height="50px" width="50px">
         </a>
       </div>
 

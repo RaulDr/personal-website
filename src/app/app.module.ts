@@ -6,13 +6,15 @@ import {AppRoutingModule} from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MainComponent} from './main/main.component';
 import {NavbarComponent} from './global/navbar/navbar.component';
-import { FooterComponent } from './global/footer/footer.component';
-import { HeroComponent } from './main/hero/hero.component';
-import { PortofolioComponent } from './main/portofolio/portofolio.component';
-import { AboutComponent } from './main/about/about.component';
-import { DividerCustomComponent } from './global/divider-custom/divider-custom.component';
-import { ContactMeComponent } from './main/contact-me/contact-me.component';
+import {FooterComponent} from './global/footer/footer.component';
+import {HeroComponent} from './main/hero/hero.component';
+import {PortofolioComponent} from './main/portofolio/portofolio.component';
+import {AboutComponent} from './main/about/about.component';
+import {DividerCustomComponent} from './global/divider-custom/divider-custom.component';
+import {ContactMeComponent} from './main/contact-me/contact-me.component';
 import {ProjectsComponent} from './main/portofolio/projects/projects.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,15 @@ import {ProjectsComponent} from './main/portofolio/projects/projects.component';
     AboutComponent,
     DividerCustomComponent,
     ContactMeComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
