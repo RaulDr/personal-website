@@ -6,7 +6,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
-  styleUrls: ['./contact-me.component.scss'],
+  styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent implements OnInit {
   public submitted = false;
@@ -19,7 +19,7 @@ export class ContactMeComponent implements OnInit {
     message: new FormControl('')
   });
 
-  constructor(private readonly emailService: EmailService) {
+  constructor(public emailService: EmailService) {
   }
 
   ngOnInit() {
